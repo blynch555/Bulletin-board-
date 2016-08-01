@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Доска</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" href="libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="libs/font-awesome-4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<!--Begin Arrow-top-->
+	<div class="arrow-to-top">
+		<a href="#main"><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i></a>
+	</div>
+	<!--end Arrow-top-->
+
+	<!-- begin wrapper  -->
+	<div id="main" class="wrapper">
+
+			<!-- begin banner-top -->
+		<div class="banner-top">
+			<a href="#" class="banner-top-in"><img src="http://stroitelstvo.uz/rek/600x100.jpg" alt=""></a>
+			<button class="close-banner-fix">x</button>
+		</div>
+		<!-- end banner-top -->
+		
+		<div class="body-branding">
+			<!-- begin banner  -->
+			<div class="banner-1">
+				<a href="#"><img src="http://www.pharmanewsonline.com/wp-content/uploads/2016/01/ad.jpg" alt="banner"></a>
+				<button class="close-banner-fix">x</button>
+			</div>
+			<!-- end banner -->
+
+			<!-- begin service-1  -->
+			<div class="service service-1">
+				<a href="#"><img src="http://www.marinmommies.com/files/image/halfbanner(1).png" alt="service"></a>
+				<button class="close-banner-fix">x</button>
+			</div>
+			<!-- end service-1 -->
+
+			<!-- begin service-2  -->
+			<div class="service service-2">
+				<a href="#"><img src="http://www.marinmommies.com/files/image/halfbanner(1).png"></a>
+				<button class="close-banner-fix">x</button>
+			</div>
+			<!-- end service-2 -->
+		</div>
+		
+		<div class="container">
+			<!-- begin header  -->
+			<header class="header clearfix">
+				<div class="col-xs-12">
+					<div class="row">
+
+						<!-- begin header__top  -->
+						<div class="header-top" >
+							<div class="col-xs-12">
+								<div class="row">
+									<a href="index.html" class="logo"><img src="" alt="logo"></a>
+									<a href="#" class="post-new">+ Подать объявление</a>
+									<a href="#" class="userbox"><i class="fa fa-user" aria-hidden="true"></i>Мой профиль</a>
+									<ul class="lang-selector">
+										<li><a href="#">язык</a></li>
+										<li><a href="#">мова</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- end header__top -->
+						
+						<!-- start form -->
+						<form action="#" id="searchForm" class="form-search form-horizontal">
+							<div class="form-inline">
+								<div class="col-xs-4 location">
+									<div class="form-group">
+										<input type="text" class="form-control field search city-search" id="cityCurrent" placeholder="Город, область...">
+										<a href="#" class="clear-input reset "><i class="fa fa-times" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="row">
+										<div class="form-group">
+											<input type="text" class="form-control field search" placeholder="8 350 432 объявлений">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<button type="submit" class="btn btn-default field submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i>Поиск</button>
+								</div>
+							</div>					
+						</form>
+						<!-- end form -->
+						
+						<!-- begion location-wrap -->
+						<div class="col-xs-12 location-wrap">
+							
+							<div class="col-xs-12 location-title">
+								<div class="row">
+									<div class="col-xs-12">
+										<button class="location-title-all">Искать по всей стране</button>
+									</div>		
+									<div class="col-xs-12">
+										<div class="col-xs-6">
+											<div class="row">
+												<button class="location-title-region">Искать по всей области</button>
+											</div>
+										</div>
+										<div class="col-xs-6">
+											<div class="row">
+												<button class="location-title-back">вернуться к выбору области</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-4 search-city-wrap">
+								<div class="row">
+									<input type="text" id="cityBox" placeholder="Начните вводить город">
+									<a href="#" class="clear-input"><i class="fa fa-times" aria-hidden="true"></i></a>
+								</div>
+							</div>
+
+							<div class="col-xs-12 region-wrap">
+								<div class="row">
+									<ul class="region-list">
+										<li id="reg1">Автономная Республика Крым </li>
+										<li id="reg2">Винницкая область</li>
+										<li id="reg3">Одеська область</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-xs-12 city-wrap" id="reg1">			
+								<div class="row">
+									<ul class="city-list">
+										<li>Киев</li>
+										<li>Белая Церковь</li>
+										<li>Буча</li>
+										<li>Малин</li>
+										<li>Житомир</li>
+										<li>Коростень</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-xs-12 city-wrap" id="reg2">
+								<div class="row">
+									<ul class="city-list">
+										<li>Буча</li>
+										<li>Иванков</li>
+										<li>Борисполь</li>
+										<li>Овруч</li>
+										<li>Черняхів</li>
+										<li>Чоповичі</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="city-wrap col-xs-12" id="reg3">
+								<div class="row">
+									<ul class="city-list">
+										<li>Миколаїв</li>
+										<li>Херсон</li>
+										<li>Буча</li>
+										<li>Малин</li>
+										<li>Житомир</li>
+										<li>Коростень</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-xs-12 find-city">
+								<div class="row">
+									<ul class="city-list-find">					
+									</ul>
+								</div>
+							</div>
+							<div class="exit-location-wrap">
+								закрыть <i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							
+						</div>
+						<!-- end location-wrap -->
+
+						<!-- START: SEARCH-CITY -->
+						<div class="col-xs-5 search-city">
+							<div class="col-xs-12">
+								Где вы:
+							</div>
+							<div class="col-xs-12">
+								<button  class="take-city">Киев</button>
+								<button  class="take-city">Одесса</button>
+								<div class="search-city-line"></div>
+								<button class="take-searchForm">Выбрать город<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+							</div>
+							<i class="fa fa-times close-city" aria-hidden="true"></i>
+						</div>
+						<!-- END -->
+
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- begin content-wrap -->
+			<div class="content-wrap clearfix">
+				<div class="col-xs-12">
+					<div class="row">
+						
+						<!-- begin siteblog  -->
+						<div class="siteblog clearfix">
+							<div class="col-xs-12">
+								<div class="row">
+
+									<!-- begin blog-title -->
+									<div class="siteblog-title clearfix">
+										<div class="col-xs-12">
+											<div class="row">
+												<div class="col-xs-4 help-tittle">Помощь</div>
+												<div class="col-xs-4 col-xs-offset-4">
+													<form action="#" class="blog-search">
+														<fieldset>
+															<div class="input-group">
+																<input type="text" class="form-control" placeholder="Поиск...">
+																<span class="input-group-btn">
+																	<button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+																</span>
+															</div>
+														</fieldset>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end blog-title -->
+
+									<!-- begin help-wrap  -->
+									<div class="help-wrap clearfix">
+										<!-- begin help-aside  -->
+										<div class="help-aside col-xs-4">
+											<div class="row">
+												<ul class="nav nav-tabs" role="tablist">
+													<li class="nav-item is-active">
+														<a href="#item_1" aria-controls="1" role="tab" data-toggle="tab">
+															<span>Топ-10 вопросов</span><i class="fa fa-chevron-right" aria-hidden="true"></i>
+															<p>О нас</p>
+															<p>Правила публикации объявлений</p>
+															<p>Список запрещенных товаров, услуг</p>
+														</a>
+													</li>
+													<li class="nav-item">
+														<a href="#item_2" aria-controls="2" role="tab" data-toggle="tab">
+															<span>Обявления</span><i class="fa fa-chevron-right" aria-hidden="true"></i>
+															<p>Как разместить объявление на сайте OLX</p>
+															<p>Как добавить фотографии к объявлению</p>
+															<p>Как составить привлекательное объявление?</p>
+														</a>
+													</li>
+													<li class="nav-item">
+														<a href="#item_3" aria-controls="3" role="tab" data-toggle="tab">
+														<span>Как рекламировать обявления</span><i class="fa fa-chevron-right" aria-hidden="true"></i>
+															<p>Порядок оплаты</p>
+															<p>Преимущества платных услуг</p>
+															<p>Стоимость услуг</p>
+														</a>
+													</li>
+													<li class="nav-item">
+														<a href="#item_4" aria-controls="4" role="tab" data-toggle="tab">
+														<span>Как продавать безопасно</span><i class="fa fa-chevron-right" aria-hidden="true"></i>
+															<p>Как связаться с автором объявления?</p>
+															<p>Как продавать безопасно</p>
+															<p>Как покупать безопасно</p>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- end help-aside -->
+
+										<!-- begin help-in  -->
+										<div class="help-in col-xs-8">
+											<div class="row">
+												<div class="tab-content">
+													<div role="tabpanel" class="tab-pane active clearfix" id="item_1">
+														<div class="col-xs-12">
+															<div class="row">
+																<div id="accordion" role="tablist" aria-multiselectable="true">
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingOne">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingTwo">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+																					<p>Как разместить объявление на сайте<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																			<div class="text-xs-center">
+																				<img src="http://allpravda.info/upload/editor/news/2016.03/56f3ddea3871c_1458822634.jpg" class="img-rounded" alt="...">
+																			</div>
+																			<ol>
+																				<li>Составьте заголовок предлагаемого вами товара/услуги. Он должен быть понятным, грамотным и привлекательным, содержать наименование вашего товара/услуги.</li>
+																				<li>Выберите подходящие раздел и рубрику, в которых вы хотите разместить свое объявление - так ваше объявление получит наибольшее количество откликов. Вы можете заранее узнать нужную рубрику, найдя по поиску на сайте объявления, подобные вашему, и опубликовать свое в том же разделе.</li>
+																				<li>Определите, к какому типу относится ваше объявление - предложение или спрос (только для рубрик Работа и Недвижимость). Выберите параметр «Предлагаю», если вы предлагаете товар/услугу или параметр «Ищу», если вы хотите что-то купить или найти.</li>
+																				<li>Укажите цену - данное поле обязательно! Если вы готовы к пересмотру указанной цены, выберите параметр «Торг возможен», если вы намерены обменять товар - «Обмен», а если вы готовы подарить товар, выберите параметр «Бесплатно». Указывайте реальную цену, а не условную вроде 1 грн., 2 руб. и т.д.</li>
+																				<li>Выберите параметр «Частное лицо», если вы предлагаете собственные товары или «Бизнес» - если вы представляете агентство, интернет-магазин, компанию, частный бизнес.</li>
+																				<li>Добавьте описание предлагаемого вами товара/услуги, содержащее как можно больше подробной информации. Это позволит быстрее продать товар и избежать дополнительных вопросов со стороны потенциальных покупателей. Как создать привлекательный текст объявления, читайте <a href="#">здесь</a>.</li>
+																				<li>Добавьте фотографии. Объявления с качественными фотографиями получают в среднем в 3-5 раз больше откликов, чем без фото! Вы можете добавить максимум 8 фотографий в формате jpg, gif, png, не более 5 Мбайт и 2000x2000 px. Подробную информацию о добавлении фотографий можно найти <a href="#">здесь</a>.</li>
+																				<li>Укажите регион, город, район, станцию метро – это поможет вашему покупателю/потребителю услуг понять, где вы находитесь.</li>
+																				<li>Введите ваш email-адрес. Он не будет отображаться на странице с объявлениями. E-mail необходим для активации вашего объявления и входа в личную учетную запись. Также укажите альтернативные способы связи - телефон, ICQ или Skype. Это даст возможность общаться с большим количеством потенциальных покупателей.</li>
+																				<li>Активация объявления. На ваш e-mail будет отправлена ссылка активации объявления. Перейдите по ней для публикации объявления. Объявления, публикуемые зарегистрированными и авторизированными пользователями, не требуют активации и сразу же публикуются на сайте OLX.ua.</li>
+																				<li>Для завершения публикации нажмите кнопку «Опубликовать».</li>
+																			</ol>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingThree">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+																					<p>Личная учетная запись «Мой профиль»<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane clearfix" id="item_2">
+														<div class="col-xs-12">
+															<div class="row">
+																<div id="accordion" role="tablist" aria-multiselectable="true">
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingFour">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+																					<p>Забыли пароль?<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingFive">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+																					<p>Личная учетная запись «Мой профиль»<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingSix">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingSeven">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+																					<p>Как разместить объявление на сайте<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="headingNine">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading10">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+																					<p>Как разместить объявление на сайте<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading11">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+																					<p>О нас<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane clearfix" id="item_3">
+														<div class="col-xs-12">
+															<div class="row">
+																<div id="accordion" role="tablist" aria-multiselectable="true">
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading12">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+																					<p>Забыли пароль?<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading13">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+																					<p>Личная учетная запись «Мой профиль»<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading14">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading15">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+																					<p>Как разместить объявление на сайте<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading16">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse16" aria-expanded="false" aria-controls="collapse16">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading17">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse17" aria-expanded="false" aria-controls="collapse17">
+																					<p>Как разместить объявление на сайте<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading18">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse18" aria-expanded="false" aria-controls="collapse18">
+																					<p>О нас<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div role="tabpanel" class="tab-pane clearfix" id="item_4">
+														<div class="col-xs-12">
+															<div class="row">
+																<div id="accordion" role="tablist" aria-multiselectable="true">
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading19">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse19" aria-expanded="false" aria-controls="collapse19">
+																					<p>Забыли пароль?<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading20">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse20" aria-expanded="false" aria-controls="collapse20">
+																					<p>Личная учетная запись «Мой профиль»<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading21">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false" aria-controls="collapse21">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading22">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="false" aria-controls="collapse22">
+																					<p>Как разместить объявление на сайте<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading23">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading24">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse24" aria-expanded="false" aria-controls="collapse24">
+																					<p>Как разместить объявление на сайте<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading24">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading25">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse25" aria-expanded="false" aria-controls="collapse25">
+																					<p>О нас<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading25">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading26">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse26" aria-expanded="false" aria-controls="collapse26">
+																					<p>Как разместить объявление на сайте<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse26" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading26">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading27">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse27" aria-expanded="false" aria-controls="collapse27">
+																					<p>О нас<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse27" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading27">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading28">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse28" aria-expanded="false" aria-controls="collapse28">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse28" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading28">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																	<div class="panel panel-default">
+																		<div class="panel-heading" role="tab" id="heading29">
+																			<h4 class="panel-title">
+																				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse29" aria-expanded="false" aria-controls="collapse29">
+																					<p>Как продавать безопасно<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+																				</a>
+																			</h4>
+																		</div>
+																		<div id="collapse29" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading29">
+																			<p>На сайте вы можете опубликовать свои объявления бесплатно, легко и быстро! для этого просто нажмите кнопку «подать объявление» в правом верхнем углу главной страницы.</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end help-in -->
+									</div>
+									<!-- end help-wrap -->
+
+									<!-- begin feedback-help  -->
+									<div class="feedback-help clearfix">
+										<div class="col-xs-12">
+											<div class="row">
+												<div class="col-xs-12">
+													<div class="row">
+														<h2 class="post-title">Не нашли ответа на свой вопрос?</h2>
+													</div>
+												</div>
+												<div class="col-xs-12 write-to-us">
+													<strong>Напишите нам.</strong> Сотрудник Отдела заботы о пользователях ответит в ближайшее время удобным для вас способом.
+												</div>
+												<!-- begin row  -->
+												<div class="col-xs-12">
+													<div class="row">
+														<!-- begin feedback-help-aside  -->
+														<div class="col-xs-4 feedback-help-aside">
+															<!-- begin info  -->
+															<div class="col-xs-12 feedback-info our-contacts">
+																<div class="col-xs-12 contacts-tittle"><div class="row">Отдел заботы о пользователях</div></div>
+																<div class="col-xs-12 contacts-name"><div class="row">Фамилия Имя</div></div>
+																<div class="col-xs-12"><div class="row">Консультант по вопросам работы сайта</div></div>
+																<div class="col-xs-12">
+																	<div class="row">
+																		<div class="col-xs-6"><div class="row">Горячая линия:</div></div>
+																		<div class="phone-list col-xs-6">
+																			<div class="row">
+																				<div class="col-xs-12"><div class="row">0-800-00-00-00</div></div>
+																				<div class="col-xs-12"><div class="row">(067)123-45-67</div></div>
+																				<div class="col-xs-12"><div class="row">(093)123-45-67</div></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-xs-12">
+																	<div class="row">
+																		<div class="show-all-btn">
+																			<a href="#">Связаться</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<!-- end info -->
+														</div><!-- end feedback-help-aside -->
+
+														<!-- begin feedback-help-in  -->
+														<div class="col-xs-8 feedback-help-in">
+															<form action="#" class="feedback-help-form">
+																<fieldset>
+																	<!-- begin field  -->
+																	<div class="form-group clearfix">
+																		<div class="col-xs-4">
+																			<div class="row">
+																				<select class="selecters" data-validation="required" data-validation-event="change" data-validation-error-msg="Выберите проект" data-validation-error-msg-container="#errorProject">
+																					<option value="">Выберите проект *</option>
+																					<option value="Проект 1">Проект 1</option>
+																					<option value="Проект 2">Проект 2</option>
+																					<option value="Проект 3">Проект 3</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	<!-- begin field  -->
+																	<div class="form-group clearfix">
+																		<input type="text" class="form-control" placeholder="Тема">
+																	</div>
+																	<!-- begin field  -->
+																	<div class="form-group clearfix">
+																		<textarea class="form-control" placeholder="Текст сообщения *" data-validation="length" data-validation-length="min5" data-validation-error-msg="Поле обязательное для заполнения"></textarea>
+																	</div>
+																	<!-- begin field  -->
+																	<div class="form-group clearfix">
+																		<input type="text" class="form-control" placeholder="E-mail *" data-validation="email" data-validation-error-msg="Обязательно для заполнения. На указанный email будет предоставлен ответ.">
+																	</div>
+																	<div class="form-group">
+																		<!-- begin captcha  -->
+																		<div class="col-xs-5 captcha">
+																			<div class="row">
+																				<div class="col-xs-12 captcha-in">
+																					<div class="row">
+																						<img src="img/other/recaptcha.jpg" alt="recaptcha">
+																					</div>
+																				</div>
+																				<div class="col-xs-12">
+																					<div class="row">
+																						<a href="#">Конфиденциальность</a>
+																						<a href="#">Условия использования</a>
+																					</div>
+																				</div>
+																			</div>
+																		</div><!-- end captcha -->
+																		<div class="col-xs-5 col-xs-offset-2">
+																			<div class="row">
+																				<button type="submit" class="submit-btn">Отправить</button>
+																			</div>
+																		</div>
+																	</div>
+																</fieldset>
+															</form>
+														</div>
+														<!-- end feedback-help-in -->
+													</div>
+												</div>
+												<!-- end row -->
+											</div>
+										</div>
+									</div>
+									<!-- end feedback-help -->
+								</div>
+							</div>
+						</div>
+						<!-- end siteblog -->
+
+					<!-- Start: section-about  -->
+						<div class="col-xs-12 section-about">
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-xs-3 logo">
+										<a href="#">
+											<img src="" alt="logo">
+										</a>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam totam rem aperiam totam
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 famous">	
+								<div class="row">
+									<p><strong>Популярные запросы:</strong> <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>.</p>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="row">
+									<p class="social-title">Спасибо, что рассказываете о нас друзьям!</p>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="social-list">
+										<div class="col-xs-2_4 soc"><a href="#"><i class="fa fa-twitter twitter" aria-hidden="true"></i>Поделиться<span>35</span></a></div>
+										<div class="col-xs-2_4 soc"><a href="#"><i class="fa fa-facebook facebook" aria-hidden="true"></i>Поделиться<span>35</span></a></div>
+										<div class="col-xs-2_4 soc"><a href="#"><i class="fa fa-vk vk" aria-hidden="true"></i>Поделиться<span>35</span></a></div>
+										<div class="col-xs-2_4 soc"><a href="#"><i class="fa fa-odnoklassniki odnakl" aria-hidden="true"></i>Поделиться<span>35</span></a></div>
+										<div class="col-xs-2_4 soc"><a href="#"><i class="fa fa-google-plus google" aria-hidden="true"></i>Поделиться<span>35</span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END: section about -->
+					</div>
+				</div>
+			</div>
+		<!-- END: content-wrap -->
+		</div>
+	</div>
+	<!-- END: wrapper -->
+
+<!-- begin footer  -->
+<footer class="footer clearfix">
+	<div class="container">
+
+		<!-- begin footer-left-->
+		<div class="col-xs-8">
+			<div class="row">	
+				<div class="footer-col col-xs-6">
+					<p>Lorem ipsum.</p>
+					<ul class="footer-list">
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+					</ul>
+				</div>
+				<div class="footer-col col-xs-6">
+					<p>Lorem ipsum.</p>
+					<ul class="footer-list">
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end footer--left -->
+		<!-- begin footer--right  -->
+		<div class="col-xs-4">
+			<div class="row">
+				<div class="col-xs-12 our-contacts">
+					<p class="contacts-tittle">Отдел заботы о пользователях</p>
+					<p class="contacts-name">Фамилия Имя</p>
+					<p>Консультант по вопросам работы сайта</p>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-6"><div class="row">Горячая линия:</div></div>
+							<div class="phone-list col-xs-6">
+								<div class="row">
+									<p>0-800-00-00-00</p>
+									<p>(067)123-45-67</p>
+									<p>(093)123-45-67</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="show-all-btn">
+								<a href="#">Связаться</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end footer--right -->
+		<!-- begin footer-bottom  -->
+		<div class="footer-bottom col-xs-12">
+			<div class="col-xs-2">
+				<div class="row">
+					<a href="#" class="footer-logo"><img src="" alt="logo"></a>
+				</div>
+			</div>
+			<div class="col-xs-10">
+				<p><a href="#" class="create-by">&copy; logo</a> Все права защищены.</p>
+				<p>Разработка и поддержка <a href="#">MTITM</a></p>
+			</div>
+		</div>
+		<!-- end footer-bottom -->
+
+	</div>
+</footer>
+<!-- END: footer -->
+
+		<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+
+
+	<script src="libs/modernizr/modernizr.js"></script>
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
+	<script src="libs/icheck.min.js"></script>
+	<script src="libs/jquery.selectric.js"></script>
+	<script src="libs/slick.min.js"></script>
+	<script src="libs/jquery.form-validator.min.js"></script>
+	<script src="libs/jquery.fancybox.js"></script>
+	<script src="libs/jquery.fancybox-thumbs.js"></script>
+	<script src="libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
+
